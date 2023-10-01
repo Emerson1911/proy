@@ -3,10 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proyect.Views.ClientePage"
              Title="ClientePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    
+    <VerticalStackLayout Margin="5">
+        
+        <Label Text="Formulario Clientes" FontSize="30" HorizontalOptions="Center"/>
+
+        <Label Text="Nombre" FontSize="15"/>
+        <Entry />
+        <Label Text="Dui" FontSize="15"/>
+        <Entry />
+        <Label Text="Telefono" FontSize="15"/>
+        <Entry />
+        <Label Text="Telefono 2" FontSize="15"/>
+        <Entry />
+        <Label Text="Correo electronico" FontSize="15"/>
+        <Entry />
+        
+        <Label Text="Datos del dispositivo" FontSize="30" HorizontalOptions="Center"/>
+        
+        <Label Text="Modelo" FontSize="15"/>
+        <Entry />
+        <Label Text="Marca" FontSize="15"/>
+        <Entry />
+        <Label Text="Estado" FontSize="15"/>
+        <Entry />
+        <Label Text="Diagnostico" FontSize="15"/>
+        <Entry />
     </VerticalStackLayout>
 </ContentPage>
