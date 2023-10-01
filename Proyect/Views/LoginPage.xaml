@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyect.Views.LoginPage"
+             Title="LoginPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout
+ Spacing="25"
+ VerticalOptions="Center">
+                <Image Source="zorr.png" HeightRequest="150" WidthRequest="150"/>
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Bienvenidos!" FontSize="28" TextColor="#590000" HorizontalTextAlignment="Center"/>
+                    <Label Text="Login Fox Company Red" FontSize="18" TextColor="#590000" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                        <Image Source="usuario1.png" HeightRequest="30" WidthRequest="30"/>
+                    </Frame>
+                    <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="UserName" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="UserName" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                        <Image Source="bloqueado.png" HeightRequest="30" WidthRequest="30"/>
+                    </Frame>
+                    <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                        <Entry x:Name="UserPassword" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password" IsPassword="True" />
+                    </Frame>
+                </StackLayout>
+
+                <Button Text="Sing In" WidthRequest="200" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="#590000"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                    <Label Text="Dont have accunt?" TextColor="#590000"/>
+                </StackLayout>
+                <Button WidthRequest="200" CornerRadius="20" BackgroundColor="White" TextColor="#590000" Text="Sing Up here" FontAttributes="Bold"  />
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+</ContentPage>
