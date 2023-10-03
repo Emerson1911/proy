@@ -24,6 +24,12 @@
         </x:Arguments>
     </NavigationPage>
 
+    <NavigationPage IconImageSource="compra.png">
+        <x:Arguments>
+            <Views:SalidaProducto/>
+        </x:Arguments>
+    </NavigationPage>
+
     <NavigationPage IconImageSource="bloqueado.png">
         <x:Arguments>
             <Views:LoginPage/>

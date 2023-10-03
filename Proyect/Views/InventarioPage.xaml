@@ -4,24 +4,24 @@
              x:Class="Proyect.Views.InventarioPage"
              Title="InventarioPage">
 
-    <VerticalStackLayout Margin="5">
-
-        <Label Text="Inventario" FontSize="30" HorizontalOptions="Center"/>
-
-        <Label Text="Cantidad" FontSize="15"/>
+    <ScrollView VerticalOptions="CenterAndExpand"
+                Margin="5"
+               >
+        <StackLayout>
+            <Label Text="Inventario de Entradas" FontSize="30" HorizontalOptions="Center"/>
+            
+        <Label Text="Nombre del Producto" FontSize="15"/>
+        <Entry />
+        <Label Text="cantidad" FontSize="15"/>
         <Entry />
         <Label Text="Precio" FontSize="15"/>
         <Entry />
-        <Label Text="Fecha Venta" FontSize="15"/>
+        <Label Text="Fecha de compra" FontSize="15"/>
         <Entry />
-        <Label Text="Fecha Compra" FontSize="15"/>
+        <Label Text="Quien lo compro" FontSize="15"/>
         <Entry />
-        <Label Text="Fecha de salida" FontSize="15"/>
-        <Entry />
-        <Label Text="vendedor" FontSize="15"/>
-        <Entry />
-        <Label Text="Categoria" FontSize="15"/>
-        <Picker WidthRequest="200" HorizontalOptions="Start"/>
-        <Label Text="QR" FontSize="15"/>
-    </VerticalStackLayout>
+            <Button Text="Ingreso"/>
+        </StackLayout>
+    </ScrollView>
+    
 </ContentPage>

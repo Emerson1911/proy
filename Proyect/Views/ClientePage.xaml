@@ -4,6 +4,7 @@
              x:Class="Proyect.Views.ClientePage"
              Title="ClientePage">
     
+    <ScrollView VerticalOptions="CenterAndExpand">
     <VerticalStackLayout Margin="5">
         
         <Label Text="Formulario Clientes" FontSize="30" HorizontalOptions="Center"/>
@@ -30,4 +31,5 @@
         <Label Text="Diagnostico" FontSize="15"/>
         <Entry />
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
